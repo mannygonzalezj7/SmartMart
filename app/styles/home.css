@@ -1,0 +1,28 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    height: 40vh;
+}
+
+.hero::before{
+    background-image: url("/grocery-backdrop.jpeg");
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    opacity: 0.5; /* Adjust the transparency */
+    z-index: -1; /* Make sure it's behind the content */
+    height: 40vh;
+}
+
+.home-google-maps img{
+    width: 100%;
+    height: auto;
+}

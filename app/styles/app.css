@@ -1,0 +1,56 @@
+/* FOR GLOBAL STYLES*/
+
+:root {
+  --bg-color: white;
+  --text-color: black;
+  --button-bg: #30b400;
+  --button-bg-hover: #217b00;
+  --button-hover: #7b7b7b;
+}
+
+@media (prefers-color-scheme: dark) {
+:root {
+  --bg-color: rgb(45, 45, 45);
+  --text-color: white;
+  --button-bg: #30b400;
+  --button-bg-hover: #217b00;
+  --button-hover: #ddd;
+}
+}
+
+body{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 1rem;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-main {
+  color: var(--bg-color);
+  background-color: var(--button-bg);
+  border: none;
+  text-align: center;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+}
+
+.button-main:hover {
+  background-color: var(--button-bg-hover);
+}
+
+.button-secondary {
+  border: var(--text-color) 2px solid;
+  background-color: transparent;
+  text-align: center;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+
+  color: var(--text-color);
+}
+
+.button-secondary:hover {
+  border: var(--button-hover) 2px solid;
+  color: var(--button-hover);
+}

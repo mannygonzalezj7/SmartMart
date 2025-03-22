@@ -3,8 +3,8 @@
 :root {
   --bg-color: white;
   --text-color: black;
-  --button-bg: #30b400;
-  --button-bg-hover: #217b00;
+  --button-bg: #098200;
+  --button-bg-hover: #30b400;
   --button-hover: #7b7b7b;
 }
 
@@ -12,8 +12,8 @@
 :root {
   --bg-color: rgb(45, 45, 45);
   --text-color: white;
-  --button-bg: #30b400;
-  --button-bg-hover: #217b00;
+  --button-bg: #098200;
+  --button-bg-hover: #30b400;
   --button-hover: #ddd;
 }
 }
@@ -22,9 +22,13 @@ body{
   background-color: var(--bg-color);
   color: var(--text-color);
   margin: 0;
-  padding: 1rem;
 
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+  font-size: 2rem;
+  font-weight: 100;
 }
 
 .button-main {
@@ -34,10 +38,17 @@ body{
   text-align: center;
   padding: .5rem 1rem;
   border-radius: .5rem;
+
+  width: max-content;
+  height: max-content;
+  min-width: 5rem;
+  min-height: 1.1rem;
+  box-sizing: border-box;
 }
 
 .button-main:hover {
   background-color: var(--button-bg-hover);
+  cursor: pointer;
 }
 
 .button-secondary {
@@ -46,11 +57,17 @@ body{
   text-align: center;
   padding: .5rem 1rem;
   border-radius: .5rem;
-
+  
   color: var(--text-color);
+  width: max-content;
+  height: max-content;
+  min-width: 5rem;
+  min-height: 1.1rem;
+  box-sizing: border-box;
 }
 
 .button-secondary:hover {
   border: var(--button-hover) 2px solid;
   color: var(--button-hover);
+  cursor: pointer;
 }

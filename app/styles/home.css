@@ -3,26 +3,132 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    line-height: 0rem;
+    height: 10rem;
+
+    background-color: var(--button-bg);
+    color: var(--bg-color);
+}
+
+.stores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    padding: 1rem 3rem;
+}
+
+.stores-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+.stores-head p{color: var(--button-hover)}
+
+.stores-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5vw;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 
-    height: 40vh;
+    cursor: pointer;
 }
 
-.hero::before{
-    background-image: url("/grocery-backdrop.jpeg");
-    content: '';
+.card-img{
+    display: block;
+    max-width: 5rem;
+    border-radius: 1rem;
+}
+
+.card img{
+    max-width: 100%;
+    max-height: auto;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.deals{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    padding: 1rem 3rem;
+}
+
+.carousel{
+    display: flex;
+    flex-direction: row;
+}
+
+.sales-card{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.sales-card img{
+    max-width: 45vw;
+}
+
+.button-card {
+    border: var(--text-color) 2px solid;
+    background-color: transparent;
+    text-align: center;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-size: cover;
-    opacity: 0.5; /* Adjust the transparency */
-    z-index: -1; /* Make sure it's behind the content */
-    height: 40vh;
-}
 
-.home-google-maps img{
-    width: 100%;
-    height: auto;
-}
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    color: var(--text-color);
+    width: max-content;
+    height: max-content;
+    min-width: 5rem;
+    min-height: 1.1rem;
+    box-sizing: border-box;
+  }
+  
+  .button-card:hover {
+    border: var(--button-hover) 2px solid;
+    color: var(--button-hover);
+    cursor: pointer;
+  }
+
+  .map{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    padding: 1rem 3rem;
+  }
+
+  .map img{
+    max-width: 84rem;
+    border-radius: 5rem;
+  }
+
+  .faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }

@@ -71,3 +71,11 @@ h1{
   color: var(--button-hover);
   cursor: pointer;
 }
+
+.button-holder{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scale: 1;
+}

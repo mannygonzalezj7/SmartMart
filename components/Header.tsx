@@ -1,6 +1,5 @@
-import { Link } from "react-router";
-import "app/styles/Header.css";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Header() {
   const [loggedIn, setLogin] = useState(false);
@@ -8,23 +7,21 @@ export default function Header() {
   return (
     <header>
       <nav>
-        <Link to="/" className="header-logo">
-          SmartMart
-        </Link>
+        <Link href="/">SmartMart</Link>
         <ul className="header-links">
           <li>
-            <Link to="/">Home</Link>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <Link to="/Page2">Trip Planner</Link>
+            <Link href="/tripPlanner">Trip Planner</Link>
           </li>
           <li>
-            <Link to="/Page2">Grocery Lists</Link>
+            <Link href="/grocery">Grocery Lists</Link>
           </li>
 
           {loggedIn ? (
             <li>
-              <Link to="/Page2">Profile</Link>
+              <Link href="/Page2">Profile</Link>
             </li>
           ) : (
             <>

@@ -1,0 +1,47 @@
+.planner{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 2rem
+}
+
+.planner-section-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.planner-card-slider{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4rem;
+}
+
+.planner-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.planner-button{
+    border: none;
+    width: 10rem;
+    height: 5rem;
+    border-radius: 1rem;
+    background-color: var(--button-hover);
+    cursor: pointer;
+}
+
+.planner-button:active{
+    background-color: var(--button-bg-hover);
+}
+
+.small-text{
+    color: var(--button-hover);
+    font-size: small;
+}

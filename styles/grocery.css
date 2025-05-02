@@ -1,0 +1,13 @@
+.grocery{
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+}
+
+.grocery-categories{
+    flex: 1
+}
+
+.grocery-items{
+    flex: 5
+}

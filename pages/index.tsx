@@ -1,18 +1,9 @@
-import type { Route } from "./+types/home";
-import { useState } from "react";
-import "../styles/home.css";
+import React, { useState } from "react";
 import data from "../utils/placeholder.json";
-
-export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "SmartMart" },
-    { name: "description", content: "Welcome to SmartMart!" },
-  ];
-}
 
 export default function Home() {
   const [zipcode, setZipcode] = useState(53715);
-  const [deal, setDeal] = useState(1);
+  const [deal, setDeal] = useState<number>(1);
   const [show, changeShow] = useState(false);
 
   // Define the structure of each store in the JSON
@@ -37,6 +28,17 @@ export default function Home() {
 
   // Type the imported data
   const stores: Stores = data.stores;
+
+  // Handle "Next" buttons
+
+  const updateState = (
+    setter: React.Dispatch<React.SetStateAction<number>>,
+    direction: "next" | "prev"
+  ) => {
+    setter((prevState) =>
+      direction === "next" ? prevState + 1 : prevState - 1
+    );
+  };
 
   return (
     <>
@@ -70,6 +72,9 @@ export default function Home() {
       <div className="deals">
         <h1>Today's Hot Deals</h1>
         <div className="carousel">
+          <button className="prev" onClick={() => updateState(setDeal, "prev")}>
+            Previous
+          </button>
           {Object.entries(stores)
             .slice((deal - 1) * 2, deal * 2)
             .map(([key, store]) => (
@@ -82,11 +87,14 @@ export default function Home() {
                 <button className="button-card">View More</button>
               </div>
             ))}
+          <button className="next" onClick={() => updateState(setDeal, "next")}>
+            Next
+          </button>
         </div>
       </div>
       <div className="map">
         <h1>Stores Near You</h1>
-        <img src="public/google-maps-placeholder.png" />
+        <img src="/google-maps-placeholder.png" />
       </div>
       <div className="faq">
         <h1>Frequently Asked Questions</h1>

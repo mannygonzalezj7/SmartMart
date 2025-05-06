@@ -1,4 +1,6 @@
-import data from "../utils/placeholder.json";
+"use client";
+
+import data from "../../utils/placeholder.json";
 import { useState } from "react";
 
 export default function tripPlanner() {
@@ -18,6 +20,7 @@ export default function tripPlanner() {
   interface Trips {
     [key: string]: Trip;
   }
+  ``;
 
   interface Lists {
     [key: string]: List;
@@ -63,7 +66,7 @@ export default function tripPlanner() {
         </div>
         <div className="planner-card-slider">
           {Object.entries(lists).map(([key, trip]) => (
-            <div className="planner-card">
+            <div className="planner-card" key={key}>
               <button className="planner-button">
                 <h1>
                   {trip.name

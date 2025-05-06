@@ -1,8 +1,27 @@
-import { useState } from "react";
+"use client";
+
+import { useEffect, useState } from "react";
+import { redirect, useRouter } from "next/navigation";
+import { createClient } from "../utils/supabase/client";
 import Link from "next/link";
 
 export default function Header() {
-  const [loggedIn, setLogin] = useState(false);
+  const [loggedIn, setLogin] = useState(true);
+  const router = useRouter();
+
+  useEffect(() => {
+    const checkUser = async () => {
+      const supabase = createClient();
+      const { data, error } = await supabase.auth.getUser();
+      if (!error && data?.user) {
+        setLogin(true);
+      } else {
+        setLogin(false);
+      }
+    };
+
+    checkUser();
+  }, [loggedIn]);
 
   return (
     <header>
@@ -21,14 +40,14 @@ export default function Header() {
 
           {loggedIn ? (
             <li>
-              <Link href="/Page2">Profile</Link>
+              <Link href="/profile">Profile</Link>
             </li>
           ) : (
             <>
               <button
                 className="button-main"
                 onClick={(e) => {
-                  setLogin(true);
+                  router.push("/login");
                 }}
               >
                 Log In
@@ -36,7 +55,7 @@ export default function Header() {
               <button
                 className="button-secondary"
                 onClick={(e) => {
-                  setLogin(true);
+                  router.push("/signup");
                 }}
               >
                 Sign Up

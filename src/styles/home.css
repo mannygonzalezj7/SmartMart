@@ -119,10 +119,6 @@
     align-items: flex-start;
     
     padding: 1rem 3rem;
-  }
-
-  .map img{
-    max-width: 84rem;
     border-radius: 5rem;
   }
 

@@ -1,5 +1,8 @@
+"use client";
+
 import React, { useState } from "react";
 import data from "../utils/placeholder.json";
+import GoogleMap from "../maps/google-maps";
 
 export default function Home() {
   const [zipcode, setZipcode] = useState(53715);
@@ -94,7 +97,7 @@ export default function Home() {
       </div>
       <div className="map">
         <h1>Stores Near You</h1>
-        <img src="/google-maps-placeholder.png" />
+        <GoogleMap />
       </div>
       <div className="faq">
         <h1>Frequently Asked Questions</h1>

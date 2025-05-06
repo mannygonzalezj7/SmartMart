@@ -24,7 +24,7 @@
       ".",
       "./.react-router/types"
     ],
-    "baseUrl": ".",
+    "baseUrl": "src",
     "paths": {
       "~/*": [
         "./app/*"

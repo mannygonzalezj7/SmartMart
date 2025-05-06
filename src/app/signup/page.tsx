@@ -4,7 +4,7 @@ export default function SignupPage() {
   return (
     <div className="signup-page">
       <h1>Sign Up</h1>
-      <form method="post">
+      <form method="post" className="form">
         <label htmlFor="email">Email:</label>
         <input id="email" name="email" type="email" required />
         <label htmlFor="password">Password:</label>

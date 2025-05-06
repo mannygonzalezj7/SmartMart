@@ -3,36 +3,44 @@
         "logo": "https://brandingstyleguides.com/wp-content/guidelines/2025/01/walmart-web.jpg",
         "items": {
             "Planters Heart Healthy Dry Roasted Peanuts - 16oz": {
-                "appu": 2.55,
+                "price": 2.55,
                 "brand": "Planters",
                 "labelInfo": {
                     "calories": 170,
                     "totalFat": 14
-                    }
+                    },
+                "src": "https://target.scene7.com/is/image/Target/GUEST_e73d180f-131c-4227-b84e-7e4bd5774549",
+                "category": "Snacks & Treats"
                 },
                 "Planters Heart Healthy Dry Roasted Peanuts - 18oz": {
-                    "appu": 2.55,
+                    "price": 2.55,
                     "brand": "Planters",
                     "labelInfo": {
                         "calories": 170,
                         "totalFat": 14
-                        }
+                        },
+                        "src": "https://target.scene7.com/is/image/Target/GUEST_e73d180f-131c-4227-b84e-7e4bd5774549",
+                        "category": "Snacks & Treats"
                     },
                     "Planters Heart Healthy Dry Roasted Peanuts - 12oz": {
-                        "appu": 2.55,
+                        "price": 2.55,
                         "brand": "Planters",
                         "labelInfo": {
                             "calories": 170,
                             "totalFat": 14
-                            }
+                            },
+                            "src": "https://target.scene7.com/is/image/Target/GUEST_e73d180f-131c-4227-b84e-7e4bd5774549",
+                            "category": "Snacks & Treats"
                         },
                         "Planters Heart Healthy Dry Roasted Peanuts - 10oz": {
-                            "appu": 2.55,
+                            "price": 2.55,
                             "brand": "Planters",
                             "labelInfo": {
                                 "calories": 170,
                                 "totalFat": 14
-                                }
+                                },
+                                "src": "https://target.scene7.com/is/image/Target/GUEST_e73d180f-131c-4227-b84e-7e4bd5774549",
+                                "category": "Snacks & Treats"
                             }
         },
         "sales": {
@@ -43,36 +51,44 @@
     "Target": {
         "logo": "https://brandlogos.net/wp-content/uploads/2015/05/target-logo-preview.png","items": {
             "Planters Heart Healthy Dry Roasted Peanuts - 16oz": {
-                "appu": 2.55,
+                "price": 2.55,
                 "brand": "Planters",
                 "labelInfo": {
                     "calories": 170,
                     "totalFat": 14
-                    }
+                    },
+                    "src": "https://target.scene7.com/is/image/Target/GUEST_e73d180f-131c-4227-b84e-7e4bd5774549",
+                    "category": "Snacks & Treats"
                 },
                 "Planters Heart Healthy Dry Roasted Peanuts - 18oz": {
-                    "appu": 2.55,
+                    "price": 2.55,
                     "brand": "Planters",
                     "labelInfo": {
                         "calories": 170,
                         "totalFat": 14
-                        }
+                        },
+                        "src": "https://target.scene7.com/is/image/Target/GUEST_e73d180f-131c-4227-b84e-7e4bd5774549",
+                        "category": "Snacks & Treats"
                     },
                     "Planters Heart Healthy Dry Roasted Peanuts - 12oz": {
-                        "appu": 2.55,
+                        "price": 2.55,
                         "brand": "Planters",
                         "labelInfo": {
                             "calories": 170,
                             "totalFat": 14
-                            }
+                            },
+                            "src": "https://target.scene7.com/is/image/Target/GUEST_e73d180f-131c-4227-b84e-7e4bd5774549",
+                            "category": "Snacks & Treats"
                         },
                         "Planters Heart Healthy Dry Roasted Peanuts - 10oz": {
-                            "appu": 2.55,
+                            "price": 2.55,
                             "brand": "Planters",
                             "labelInfo": {
                                 "calories": 170,
                                 "totalFat": 14
-                                }
+                                },
+                                "src": "https://target.scene7.com/is/image/Target/GUEST_e73d180f-131c-4227-b84e-7e4bd5774549",
+                                "category": "Snacks & Treats"
                             }
         },
         "sales": {
@@ -84,36 +100,44 @@
         "logo": "https://pbs.twimg.com/profile_images/950806449784958977/WiCPDN7J_400x400.jpg",
         "items": {
             "Planters Heart Healthy Dry Roasted Peanuts - 16oz": {
-                "appu": 2.55,
+                "price": 2.55,
                 "brand": "Planters",
                 "labelInfo": {
                     "calories": 170,
                     "totalFat": 14
-                    }
+                    },
+                    "src": "https://target.scene7.com/is/image/Target/GUEST_e73d180f-131c-4227-b84e-7e4bd5774549",
+                    "category": "Snacks & Treats"
                 },
                 "Planters Heart Healthy Dry Roasted Peanuts - 18oz": {
-                    "appu": 2.55,
+                    "price": 2.55,
                     "brand": "Planters",
                     "labelInfo": {
                         "calories": 170,
                         "totalFat": 14
-                        }
+                        },
+                        "src": "https://target.scene7.com/is/image/Target/GUEST_e73d180f-131c-4227-b84e-7e4bd5774549",
+                        "category": "Snacks & Treats"
                     },
                     "Planters Heart Healthy Dry Roasted Peanuts - 12oz": {
-                        "appu": 2.55,
+                        "price": 2.55,
                         "brand": "Planters",
                         "labelInfo": {
                             "calories": 170,
                             "totalFat": 14
-                            }
+                            },
+                            "src": "https://target.scene7.com/is/image/Target/GUEST_e73d180f-131c-4227-b84e-7e4bd5774549",
+                            "category": "Snacks & Treats"
                         },
                         "Planters Heart Healthy Dry Roasted Peanuts - 10oz": {
-                            "appu": 2.55,
+                            "price": 2.55,
                             "brand": "Planters",
                             "labelInfo": {
                                 "calories": 170,
                                 "totalFat": 14
-                                }
+                                },
+                                "src": "https://target.scene7.com/is/image/Target/GUEST_e73d180f-131c-4227-b84e-7e4bd5774549",
+                                "category": "Snacks & Treats"
                             }
         },
         "sales": {
@@ -142,7 +166,7 @@
         "name": "List 1",
         "items": {
             "Planters Heart Healthy Dry Roasted Peanuts - 16oz": {
-            "appu": 2.55,
+            "price": 2.55,
             "brand": "Planters",
             "labelInfo": {
                 "calories": 170,

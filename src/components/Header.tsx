@@ -6,22 +6,19 @@ import { createClient } from "../utils/supabase/client";
 import Link from "next/link";
 
 export default function Header() {
-  const [loggedIn, setLogin] = useState(true);
+  const [loggedIn, setLogin] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
     const checkUser = async () => {
       const supabase = createClient();
       const { data, error } = await supabase.auth.getUser();
-      if (!error && data?.user) {
-        setLogin(true);
-      } else {
-        setLogin(false);
-      }
+      setLogin(!!data?.user);
+      console.log("just did the motion twin");
     };
 
     checkUser();
-  }, [loggedIn]);
+  }, []);
 
   return (
     <header>
@@ -38,11 +35,7 @@ export default function Header() {
             <Link href="/grocery">Grocery Lists</Link>
           </li>
 
-          {loggedIn ? (
-            <li>
-              <Link href="/profile">Profile</Link>
-            </li>
-          ) : (
+          {!loggedIn ? (
             <>
               <button
                 className="button-main"
@@ -61,6 +54,10 @@ export default function Header() {
                 Sign Up
               </button>
             </>
+          ) : (
+            <li>
+              <Link href="/profile">Profile</Link>
+            </li>
           )}
         </ul>
       </nav>

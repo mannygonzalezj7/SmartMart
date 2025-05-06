@@ -6,6 +6,7 @@
   --button-bg: #098200;
   --button-bg-hover: #30b400;
   --button-hover: #7b7b7b;
+  --card-color: #a9a9a9;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,6 +16,7 @@
   --button-bg: #098200;
   --button-bg-hover: #30b400;
   --button-hover: #ddd;
+  --card-color: #808080;
 }
 }
 
@@ -31,28 +33,12 @@ h1{
   font-weight: 100;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-
-form label {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-form label input{
-  padding: 0.5rem;
-  font-size: 1rem;
-  width: 40vw;
+span {
+  cursor: pointer;
 }
 
 .button-main {
-  color: var(--bg-color);
+  color: var(--text-color);
   background-color: var(--button-bg);
   border: none;
   text-align: center;
@@ -102,4 +88,8 @@ form label input{
 
 .error{
   color: red;
+}
+
+.svg{
+  max-width: 2rem;
 }

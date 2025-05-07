@@ -37,6 +37,13 @@ span {
   cursor: pointer;
 }
 
+a {
+  all: unset;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
 .button-main {
   color: var(--text-color);
   background-color: var(--button-bg);

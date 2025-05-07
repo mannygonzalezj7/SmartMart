@@ -127,4 +127,49 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
+
+  .faq-text{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem
+  }
+
+  .question{
+    font-size: 1.5rem;
+  }
+
+  .answer{
+    max-width: 50vw;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-family: sans-serif;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  thead {
+    font-weight: bold;
+  }
+  
+  tbody tr:nth-child(2) {
+    background-color: #e0ffe0;
+    font-weight: bold;
+    color: #2e7d32;
+  }
+  

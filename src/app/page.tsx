@@ -13,15 +13,12 @@ export default function Home() {
   interface Store {
     logo: string;
     sales?: Sales;
+    externalLink?: string;
   }
 
   interface Sales {
     name: string;
     img: string;
-  }
-
-  interface Questions {
-    question: string;
   }
 
   // Define the structure of the stores object
@@ -58,18 +55,18 @@ export default function Home() {
         </div>
         <div className="stores-container">
           {Object.entries(stores).map(([key, store]) => (
-            <div className="card" key={key} onClick={(e) => {}}>
+            <a
+              href={store.externalLink}
+              target="_blank"
+              className="card"
+              key={key}
+            >
               <div className="card-img">
-                <img src={store.logo} />
+                <img src={store.logo} alt={key} />
               </div>
               <p>{key}</p>
-            </div>
+            </a>
           ))}
-          <div className="card">
-            <div className="card-img">
-              <p>See More</p>
-            </div>
-          </div>
         </div>
       </div>
       <div className="deals">
@@ -101,7 +98,70 @@ export default function Home() {
       </div>
       <div className="faq">
         <h1>Frequently Asked Questions</h1>
-        <div>Question 1</div>
+        <ul className="faq-text">
+          <li className="question">What is SmartMart?</li>
+          <li className="answer">
+            SmartMart is a smart grocery planning tool that helps users save
+            time and money by finding the best deals across nearby stores.
+          </li>
+
+          <li className="question">How do I use SmartMart?</li>
+          <li className="answer">
+            Simply enter your location and shopping preferences, and SmartMart
+            will generate a custom plan with optimized store stops and deals.
+          </li>
+
+          <li className="question">Is SmartMart free to use?</li>
+          <li className="answer">
+            Yes! SmartMart is currently free to use with optional premium
+            features coming soon.
+          </li>
+
+          <li className="question">
+            How does SmartMart choose which stores to recommend?
+          </li>
+          <li className="answer">
+            SmartMart uses a combination of proximity, item prices, and
+            real-time deals to suggest the most cost-effective shopping plan.
+          </li>
+
+          <li className="question">Can I customize my grocery list?</li>
+          <li className="answer">
+            Absolutely. You can create, save, and edit your grocery lists and
+            even mark favorites for quicker planning.
+          </li>
+          <li className="question">How much do you really save?</li>
+          <li>
+            Heres some estimated savings:
+            <table>
+              <thead>
+                <tr>
+                  <th>Shopping Method</th>
+                  <th>Total Cost</th>
+                  <th>You Save</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Traditional Grocery Shopping</td>
+                  <td>$45.99</td>
+                  <td>$0</td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>SmartMart</strong>
+                  </td>
+                  <td>
+                    <strong>$35.99</strong>
+                  </td>
+                  <td>
+                    <strong>$10.00</strong>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+        </ul>
       </div>
     </>
   );

@@ -39,7 +39,7 @@ export default function tripPlanner() {
           <span>Filter</span>
           <span>Sort By</span>
           <span className="cart-button">
-            <img src="/cart.svg" className="svg" />
+            <img src="/cart.svg" className="svg" alt="Cart Icon" />
           </span>
         </div>
         <div className="grocery-container">
@@ -54,7 +54,7 @@ export default function tripPlanner() {
                   <div className="grocery-items-available">
                     {Object.entries(store.items).map(([itemName, itemData]) => (
                       <div key={itemName} className="grocery-card">
-                        <img src={itemData.src} />
+                        <img src={itemData.src} alt={itemName} />
                         <p>{itemName}</p>
                         <p>${itemData.price.toFixed(2)}</p>
                         <button className="button-main">Add To Cart</button>

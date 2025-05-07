@@ -14,7 +14,6 @@ export default function Header() {
       const supabase = createClient();
       const { data, error } = await supabase.auth.getUser();
       setLogin(!!data?.user);
-      console.log("just did the motion twin");
     };
 
     checkUser();
